@@ -1,5 +1,9 @@
 # Detect when a request is for preview generation
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/brunoinds/link-preview-origin/main/LinkPreviewOrigin.png"/>
+</p>
+
 ## Use-case:
 This tool is only to resolve a single modern page link preview question: **How to detect when a request is for preview generation?**
 
@@ -10,7 +14,7 @@ With a single function, you can verify if your page is being requested to genera
 
 ## How to use it?
 
-```
+```php
 <?php 
 require('path\to\LinkPreviewOrigin.php');
 
