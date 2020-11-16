@@ -29,7 +29,7 @@ class LinkPreviewOrigin{
         $userAgentDescription = strtolower($userAgentDescription);
         $status = false;
         foreach ($blockList as $itemBlock){
-            if (self::stringIncludes($userAgentDescription, $itemBlock) == true){
+            if (self::stringIncludes($userAgentDescription, strtolower($itemBlock)) == true){
                 $status = true;
                 break;
             }
