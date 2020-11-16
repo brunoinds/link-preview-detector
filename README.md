@@ -5,7 +5,7 @@
 </p>
 
 ## Use-case:
-This tool is only to resolve a single modern page link preview question: **How to detect when a request is for preview generation?**
+This tool is only to resolve a single modern page link preview question: **How to detect when a request is for a link preview generation?**
 
 Your page needs the functionality to generate a Link Preview for Facebook, WhatsApp, Twitter. But you don't want to generate those meta-tags if is your user opening the page, and not Facebook's Bot. Generate links previews make your page loading slower. 
 To fix it, you need to check if the request is being made by Facebook, Whatsapp, Twitter, or another social network bot.
