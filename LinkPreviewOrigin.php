@@ -24,7 +24,7 @@ class LinkPreviewOrigin{
     }
 
     private static function verifyIfUserAgendIsOnBlockList($userAgentDescription){
-        $blockList = json_decode(file_get_contents(__DIR__.'/blockList.json'), true)['UserAgents'];
+        $blockList = json_decode(file_get_contents(__DIR__.'/BlockList.json'), true)['UserAgents'];
 
         $userAgentDescription = strtolower($userAgentDescription);
         $status = false;
