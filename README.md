@@ -12,17 +12,19 @@ To fix it, you need to check if the request is being made by Facebook, Whatsapp,
 
 With a single function, you can verify if your page is being requested to generate a link preview or is only your user opening the page!
 
+## How to install it?
+
+You can install this package via composer:
+
+```bash
+composer require brunoinds/link-preview-detector
+```
+
 ## How to use it?
 
 ```php
-<?php 
-require('path\to\LinkPreviewOrigin.php');
+use Brunoinds\LinkPreviewDetector\LinkPreviewDetector;
 
 $response = LinkPreviewOrigin::isForLinkPreview();
-//true or false
-
+//returns a boolean (true/false). If it is true, it means the request is coming from a link preview crawler.
 ```
-You only need to import the `LinkPreviewOrigin.php` file in this repository and call the `isForLinkPreview` method. It will return a `boolean`. If is `true`, you need to generate a Link Preview Meta-Tag.
-
-## Attention
-You need to have the `BlockList.json` file in the same directory of the `LinkPreviewOrigin.php`. The relation with the User-Agents is stored in this file.
