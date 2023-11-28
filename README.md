@@ -22,9 +22,22 @@ composer require brunoinds/link-preview-detector
 
 ## How to use it?
 
+### Method 1: Auto recognition
 ```php
 use Brunoinds\LinkPreviewDetector\LinkPreviewDetector;
 
 $response = LinkPreviewOrigin::isForLinkPreview();
 //returns a boolean (true/false). If it is true, it means the request is coming from a link preview crawler.
 ```
+This method auto-capture the request origin and user-agent, and detects if is for link preview.
+
+
+### Method 2: Manual recognition
+```php
+use Brunoinds\LinkPreviewDetector\LinkPreviewDetector;
+
+$userAgent = $_SERVER['HTTP_USER_AGENT'];
+
+$response = LinkPreviewOrigin::isForLinkPreviewUserAgent($userAgent);
+```
+With this method you can pass an specific User-Agent and will return if is a link preview crawler.
