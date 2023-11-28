@@ -1,7 +1,7 @@
 # Detect when a request is for preview generation
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/brunoinds/link-preview-origin/main/LinkPreviewOrigin.png"/>
+  <img src="https://raw.githubusercontent.com/brunoinds/link-preview-origin/main/link-preview-origin.png"/>
 </p>
 
 ## Use-case:
